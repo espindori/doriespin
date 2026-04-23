@@ -300,11 +300,12 @@ img {
   height: auto;
 }
 .project-caption {
-  margin: 20px 0 2px; /* antes tenía más aire abajo */
+  margin: 20px 0 2px;
+  font-weight: 600;
 }
 
 .project-content .project-intro {
-  margin: 0 0 8px; /* reduce espacio con el video */
+  margin: 0 0 8px;
 }
 
 .project-video {
