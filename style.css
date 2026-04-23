@@ -146,6 +146,10 @@ img {
   text-align: right;
 }
 
+.project-card a {
+  display: block;
+}
+
 .site-footer {
   padding-top: 30px;
   padding-bottom: 6px;
