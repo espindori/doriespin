@@ -306,3 +306,16 @@ img {
   height: 100%;
   border: 0;
 }
+.project-gifs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.project-gifs img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
