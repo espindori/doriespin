@@ -325,3 +325,7 @@ img {
   display: block;
   object-fit: cover;
 }
+
+.project-divider {
+  margin-top: 16px;
+}
