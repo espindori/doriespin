@@ -346,8 +346,8 @@ img {
 .about-layout {
   display: grid;
   grid-template-columns: 520px minmax(0, 1fr);
-  column-gap: 120px; 
-  padding-top: 6px;
+  column-gap: 120px;
+  padding: 6px 8px 0;
   align-items: start;
 }
 
