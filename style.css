@@ -39,8 +39,7 @@ img {
 
 .top-rule,
 .bottom-rule,
-.table-row,
-.table-heading {
+.table-row {
   border-top: 1px solid var(--line);
 }
 
