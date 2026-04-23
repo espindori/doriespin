@@ -332,6 +332,10 @@ img {
   object-fit: cover;
 }
 
+.project-gifs-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .project-divider {
   margin-top: 12px;
 }
