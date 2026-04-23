@@ -154,17 +154,38 @@ img {
   line-height: 1.2;
 }
 
+.works-table {
+  width: 100%;
+  margin-top: 0;
+}
+
 .footer-bottom {
-  margin-top: 48px;
+  margin-top: 38px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  column-gap: 24px;
+  align-items: start;
 }
 
 .footer-block p,
 .footer-block a {
   margin: 0;
   display: block;
+}
+
+.footer-locations {
+  justify-self: start;
+}
+
+.footer-links {
+  justify-self: start;
+}
+
+.footer-locations p + p,
+.footer-links a,
+.footer-links p + a,
+.footer-links a + a {
+  margin-top: 2px;
 }
 
 @media (max-width: 900px) {
