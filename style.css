@@ -69,10 +69,10 @@ img {
 .main-nav {
   display: flex;
   align-items: center;
-  gap: 48px;
-  font-size: 18px;
+  gap: 68px;
+  font-size: 19px;
   line-height: 1;
-  font-weight: 700;
+  font-weight: 600;
 }
 .main-nav a {
   letter-spacing: 0.04em;
