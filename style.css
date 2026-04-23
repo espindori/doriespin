@@ -243,9 +243,13 @@ img {
 }
 
 .sidebar-block {
-  padding-bottom: 12px;
-  margin-bottom: 12px;
+  padding-bottom: 6px;
+  margin-bottom: 8px;
   border-bottom: 1px solid #e5e5e5;
+}
+
+.sidebar-block p {
+  margin: 0 0 4px;
 }
 
 .sidebar-block h3 {
