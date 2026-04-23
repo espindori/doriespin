@@ -41,7 +41,7 @@ img {
 .bottom-rule,
 .table-row,
 .table-heading {
-  border-top: 2px solid var(--line);
+  border-top: 1px solid var(--line);
 }
 
 .site-header {
