@@ -129,6 +129,8 @@ img {
   padding-top: 4px;
   font-size: 11px;
   font-weight: 400;
+  text-transform: uppercase;
+  color: #8c8c8c;
 }
 
 .table-row {
@@ -248,7 +250,7 @@ img {
 .sidebar-block {
   padding-bottom: 6px;
   margin-bottom: 8px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid var(--line);
 }
 
 .sidebar-block p {
