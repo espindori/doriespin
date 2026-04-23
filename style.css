@@ -295,10 +295,16 @@ img {
   width: 100%;
   height: auto;
 }
+.project-caption {
+  margin: 20px 0 2px; /* antes tenía más aire abajo */
+}
+
+.project-content .project-intro {
+  margin: 0 0 8px; /* reduce espacio con el video */
+}
+
 .project-video {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  margin-top: 12px;
+  margin-top: 6px; /* antes 12px */
 }
 
 .project-video iframe {
