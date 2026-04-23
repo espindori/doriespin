@@ -45,11 +45,11 @@ img {
 }
 
 .site-header {
-  padding-top: 5px;
+  padding-top: 4px;
 }
 
 .header-main {
-  min-height: 39px;
+  min-height: 34px;
   display: flex;
   align-items: center;
   justify-content: space-between;
