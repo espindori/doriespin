@@ -384,3 +384,22 @@ img {
   font-size: 17px;
   line-height: 1.25; /* 👈 más aire vertical */
 }
+
+.project-video-grid {
+  display: grid;
+  gap: 8px;
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.project-video-grid-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.project-video-grid video {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
