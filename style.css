@@ -399,7 +399,19 @@ img {
 
 .project-video-grid video {
   width: 100%;
-  height: auto;
-  display: block;
+  aspect-ratio: 9 / 16;
   object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .project-video-grid-5 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .project-video-grid-5 {
+    grid-template-columns: 1fr;
+  }
 }
