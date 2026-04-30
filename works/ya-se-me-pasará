@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DORI ESPIN</title>
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="icon" href="../assets/LOGO_1-1.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="top-rule"></div>
+
+  <div class="header-main">
+    <div class="brand">
+      <img src="../assets/logo.png" alt="Logo" class="brand-logo">
+      <span class="brand-name">DORI ESPÍN</span>
+    </div>
+
+    <nav class="main-nav">
+      <a href="../index.html">WORK</a>
+      <a href="../sobre-mi.html">SOBRE MI</a>
+      <a href="../contact.html">CONTACT</a>
+    </nav>
+  </div>
+
+  <div class="header-subtitle">
+    ART DIRECTOR AND CREATIVE ASSISTANT @ VÉLODROME
+  </div>
+
+  <div class="bottom-rule"></div>
+</header>
+
+<main class="project-layout">
+
+  <aside class="project-sidebar">
+
+    <div class="sidebar-block">
+      <h3>PROYECTO</h3>
+      <p>YA SE ME PASARÁ</p>
+    </div>
+
+    <div class="sidebar-block">
+      <h3>ARTISTA</h3>
+      <p>DANIEL SABATER</p>
+    </div>
+
+    <div class="sidebar-block">
+      <h3>AÑO</h3>
+      <p>2022</p>
+    </div>
+
+    <div class="sidebar-block">
+      <h3>ENTREGABLES</h3>
+      <p>DESARROLLO CREATIVO DE MUSIC VIDEO, DIRECCIÓN DE ARTE DE VIDEOCLIPS, DISEÑO DE COVERS, GRABACIÓN Y EDICIÓN DE VISUALIZERS, DISEÑO DE DIGIPACK FÍSICO, DISEÑO DE MERCHANDISING.</p>
+    </div>
+
+    <div class="sidebar-block">
+      <h3>CRÉDITOS</h3>
+      <p>DIRECTORA CREATIVA DORI ESPÍN</p>
+      <p>DIRECTOR CREATIVO EDUARDO ABELLÁN</p>
+      <p>DIRIGIDO POR PEPE MARTÍNEZ Y DANIEL SABATER</p>
+      <p>DISEÑO GRÁFICO DORI ESPÍN</p>
+      <p>FOTO COVER STEVEN BERNHAR</p>
+      <p>DIRECCIÓN DE ARTE COVER JORGE MORALES & ALFREDO PÉREZ</p>
+      <p>ESTILISTA COVER CARLA MENENDEZ</p>
+    </div>
+
+  </aside>
+
+    <section class="project-content">
+    <h1>
+      UNA HISTORIA DE AMOR QUE ACABA,<br>
+      Y LA FE DE QUE EL DOLOR TAMBIÉN TIENE FINAL.<br>
+    </h1>
+
+    <p class="project-intro">
+      YA SE ME PASARÁ es el registro de una historia de amor a través de todas sus etapas: la ilusión, el amor, la decepción, el duelo y la sanación.
+    </p>
+
+<p class="project-caption">
+  YA SE ME PASARÁ [ALBUM COVER ART]
+</p>
+
+<p class="project-intro">
+  Una portada que representa la necesidad de registrarlo todo mientras lo vives por miedo a olvidarlo.
+</p>
+
+<img src="../assets/ysmp/portada-ysmp.jpg" alt="portada-ysmp" class="project-single-image">
+
+            <div class="bottom-rule"></div>
+
+      <p class="project-caption">
+  UN POCO MÁS [MUSIC VIDEO] 
+</p>
+
+<p class="project-intro">
+  Un music video sobre la ironía de lo bonita que puede ser la frustración en el amor.
+</p>
+
+<div class="project-video">
+  <iframe
+    src="https://www.youtube.com/embed/PXZlLMWrBdc"
+    title="un poco más"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+
+<div class="project-gifs project-gifs-4">
+      <img src="../assets/ysmp/1.gif" alt="1">
+      <img src="../assets/ysmp/2.gif" alt="2">
+      <img src="../assets/ysmp/3.gif" alt="3">
+      <img src="../assets/ysmp/4.gif" alt="4">
+    </div>
+            <div class="bottom-rule"></div>
+
+<p class="project-caption">
+  SUAVE [MUSIC VIDEO] 
+</p>
+
+<p class="project-intro">
+  Un music video sobre la dualidad de dolor y liberación que te da una ruptura.
+</p>
+
+<div class="project-video">
+  <iframe
+    src="https://www.youtube.com/embed/ZzWadi5GT50"
+    title="La Madrugá"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+
+<div class="project-gifs project-gifs-4">
+      <img src="../assets/ysmp/suave1.gif" alt="suave1">
+      <img src="../assets/ysmp/suave2.gif" alt="suave2">
+      <img src="../assets/ysmp/suave3.gif" alt="suave3">
+      <img src="../assets/ysmp/suave4.gif" alt="suave4">
+    </div>
+<div class="bottom-rule"></div>   
+
+      
+<p class="project-caption">
+  YA SE ME PASARÁ [VISUALS] 
+</p>
+
+    <div class="project-gifs">
+      <img src="../assets/ysmp/bolero.gif" alt="bolero">
+      <img src="../assets/ysmp/que paso.gif" alt="que paso">
+      <img src="../assets/ysmp/fue bonito mientras duro.gif" alt="fue bonito mientras duro">
+    </div>
+    <div class="project-gifs">
+      <img src="../assets/ysmp/yloveu.gif" alt="yloveu">
+      <img src="../assets/ysmp/ya se me pasara.gif" alt="ya se me pasara">
+      <img src="../assets/ysmp/intro.gif" alt="intro">
+    </div>
+      <div class="bottom-rule"></div>   
+
+
+      <p class="project-caption">
+  YA SE ME PASARÁ [TOUR MERCH & DIGIPACK FORMAT] 
+</p>
+
+<div class="project-gifs project-gifs-4">
+      <img src="../assets/ysmp/mockup-camiseta-tour-front.jpg" alt="mockup-camiseta-tour-front">
+      <img src="../assets/ysmp/mockup-camiseta-tour-back.jpg" alt="mockup-camiseta-tour-back">
+      <img src="../assets/ysmp/mockupsss.jpg" alt="mockupsss">
+      <img src="../assets/ysmp/mockupsss-nposter.jpg" alt="mockupsss-nposter">
+    </div>
+      <div class="bottom-rule"></div>   
+
+        </section>
+
+</main>
+
+<footer id="contact" class="site-footer">
+
+  <section class="works-table" aria-label="Listado de trabajos">
+    <div class="table-heading">WORKS</div>
+
+    <div class="table-row">
+      <span>LA MADRUGÁ</span>
+      <span>DELAOSSA</span>
+      <span>2025</span>
+    </div>
+
+    <div class="table-row">
+      <span>YA ES MAÑANA</span>
+      <span>MORAT</span>
+      <span>2025</span>
+    </div>
+
+    <div class="table-row">
+      <span>EL DÍA DE LA BESTIA</span>
+      <span>YUNG BEEF</span>
+      <span>2025</span>
+    </div>
+
+    <div class="table-row">
+      <span>YA SE ME PASARÁ</span>
+      <span>DANIEL SABATER</span>
+      <span>2021</span>
+    </div>
+
+    <div class="table-row">
+      <span>ASCARI</span>
+      <span>EAZYBOI</span>
+      <span>2025</span>
+    </div>
+
+    <div class="table-row">
+      <span>GUAYA</span>
+      <span>LUCHO RK</span>
+      <span>2025</span>
+    </div>
+  </section>
+
+  <div class="footer-bottom">
+    <div class="footer-block footer-locations">
+      <p>MADRID, SPAIN</p>
+      <p>MURCIA, SPAIN</p>
+    </div>
+
+    <div class="footer-block footer-links">
+      <a href="https://www.instagram.com/dorito.es/" target="_blank" rel="noreferrer">Instagram ↗</a>
+      <a href="https://www.linkedin.com/in/dori-esp%C3%ADn/" target="_blank" rel="noreferrer">Linkedin ↗</a>
+    </div>
+  </div>
+
+</footer>
+
+</body>
+</html>
