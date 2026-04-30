@@ -423,3 +423,22 @@ img {
   margin-top: 12px;
   margin-bottom: 12px;
 }
+
+.image-mosaic {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mosaic-row {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+.mosaic-row img {
+  height: 260px; /* 👈 controla altura de la fila */
+  width: auto;
+  object-fit: cover;
+  display: block;
+}
