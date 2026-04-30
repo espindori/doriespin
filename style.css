@@ -429,15 +429,14 @@ img {
   flex-direction: column;
   gap: 8px;
   width: 100%;
-  margin-top: 16px;
-  margin-bottom: 24px;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .mosaic-row {
   display: grid;
   gap: 8px;
   width: 100%;
-  margin-bottom: 12px;
 }
 
 .mosaic-row-4 {
