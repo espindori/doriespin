@@ -437,6 +437,7 @@ img {
   display: grid;
   gap: 8px;
   width: 100%;
+  margin-bottom: 12px;
 }
 
 .mosaic-row-4 {
