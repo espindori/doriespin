@@ -428,17 +428,28 @@ img {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 24px;
 }
 
 .mosaic-row {
-  display: flex;
+  display: grid;
   gap: 8px;
   width: 100%;
 }
 
+.mosaic-row-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.mosaic-row-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .mosaic-row img {
-  height: 260px; /* 👈 controla altura de la fila */
-  width: auto;
+  width: 100%;
+  height: 260px;
   object-fit: cover;
   display: block;
 }
