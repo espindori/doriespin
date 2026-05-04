@@ -377,12 +377,12 @@ img {
 }
 
 .about-text {
-  max-width: 820px; /* 👈 evita que el texto se estire demasiado */
+  max-width: 1000px;
 }
 
 .about-text p {
   font-size: 17px;
-  line-height: 1.25; /* 👈 más aire vertical */
+  line-height: 1.25;
 }
 
 .project-video-grid {
