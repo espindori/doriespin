@@ -313,9 +313,11 @@ img {
 
 .project-video {
   width: 100%;
+  max-width: none; /* 🔥 evita límites */
   aspect-ratio: 16 / 9;
   position: relative;
   overflow: hidden;
+  margin-top: 12px;
   margin-bottom: 12px;
 }
 
@@ -326,6 +328,12 @@ img {
   height: 100%;
   display: block;
   border: 0;
+}
+
+.project-content {
+  min-width: 0;
+  width: 100%;
+  max-width: none;
 }
 
 .project-gifs {
