@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DORI ESPIN</title>
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="icon" href="../assets/LOGO_1-1.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="top-rule"></div>
+
+  <div class="header-main">
+<a href="../index.html" class="brand">
+  <img src="../assets/logo.png" alt="Logo" class="brand-logo">
+  <span class="brand-name">DORI ESPÍN</span>
+</a>
+
+    <nav class="main-nav">
+      <a href="../index.html#work">WORK</a>
+      <a href="../sobre-mi.html">SOBRE MI</a>
+      <a href="../journal.html">JOURNAL</a>
+    </nav>
+  </div>
+
+  <div class="header-subtitle">
+    ART DIRECTOR AND CREATIVE ASSISTANT @ VÉLODROME
+  </div>
+
+  <div class="bottom-rule"></div>
+</header>
+
+<main class="project-layout">
+
+  <aside class="project-sidebar">
+
+    <div class="sidebar-block">
+      <h3>PROYECTO</h3>
+      <p>X TI [MUSIC VIDEO]</p>
+    </div>
+
+    <div class="sidebar-block">
+      <h3>ARTISTA</h3>
+      <p>KAPO FT. FEID</p>
+    </div>
+
+    <div class="sidebar-block">
+      <h3>AÑO</h3>
+      <p>2025</p>
+    </div>
+
+    <div class="sidebar-block">
+      <h3>ENTREGABLES</h3>
+      <p>ASISTENCIA DE DIRECCIÓN CREATIVA Y DIRECCIÓN DE ARTE CREATIVA.</p>
+    </div>
+
+    <div class="sidebar-block">
+      <h3>CRÉDITOS</h3>
+      <p>DIRECCIÓN CREATIVA EMILIO HOLGUÍN</p>
+      <p>DIRIGIDO POR JEANLA FLEUR</p>
+      <p>DOP DAVID OKOLO</p>
+      <p>PRODUCED BY DRKT STUDIOS</p>
+    </div>
+
+  </aside>
+
+    <section class="project-content">
+    <h1>
+      UN VIDEO DONDE REINA LA BELLEZA DE LO SIMPLE.<br>
+    </h1>
+
+    <p class="project-intro">
+    Un video que encarna los códigos de una cotidianidad compartida.
+    </p>
+
+<div class="project-video">
+  <iframe
+    src="https://www.youtube.com/embed/nN7BmJ72nq4"
+    title="X TI"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+      <div class="bottom-rule"></div>   
+
+        </section>
+
+</main>
+
+<footer id="contact" class="site-footer">
+
+  <section class="works-table" aria-label="Listado de trabajos">
+    <div class="table-heading">WORKS</div>
+
+    <div class="table-row">
+      <span>LA MADRUGÁ</span>
+      <span>DELAOSSA</span>
+      <span>2025</span>
+    </div>
+
+    <div class="table-row">
+      <span>YA ES MAÑANA</span>
+      <span>MORAT</span>
+      <span>2025</span>
+    </div>
+
+    <div class="table-row">
+      <span>EL DÍA DE LA BESTIA</span>
+      <span>YUNG BEEF</span>
+      <span>2025</span>
+    </div>
+
+    <div class="table-row">
+      <span>YA SE ME PASARÁ</span>
+      <span>DANIEL SABATER</span>
+      <span>2021</span>
+    </div>
+
+    <div class="table-row">
+      <span>ASCARI</span>
+      <span>EAZYBOI</span>
+      <span>2025</span>
+    </div>
+
+    <div class="table-row">
+      <span>GUAYA</span>
+      <span>LUCHO RK</span>
+      <span>2025</span>
+    </div>
+  </section>
+
+  <div class="footer-bottom">
+    <div class="footer-block footer-locations">
+      <p>MADRID, SPAIN</p>
+      <p>MURCIA, SPAIN</p>
+    </div>
+
+    <div class="footer-block footer-links">
+      <a href="https://www.instagram.com/dorito.es/" target="_blank" rel="noreferrer">Instagram ↗</a>
+      <a href="https://www.linkedin.com/in/dori-esp%C3%ADn/" target="_blank" rel="noreferrer">Linkedin ↗</a>
+    </div>
+  </div>
+
+</footer>
+
+</body>
+</html>
