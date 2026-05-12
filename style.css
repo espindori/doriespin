@@ -532,3 +532,52 @@ img {
   margin-top: 0px;
   margin-bottom: 12px;
 }
+
+
+.footer-contact {
+  padding-top: 0;
+}
+
+.footer-line {
+  border-top: 1px solid var(--line);
+  width: 100%;
+}
+
+.footer-kicker {
+  margin: 8px 0 28px;
+  font-size: 11px;
+  line-height: 1.1;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.footer-email {
+  display: inline-block;
+  margin: 0 0 22px;
+  font-size: 28px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.footer-main-links {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  margin-bottom: 0;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.footer-main-links a {
+  letter-spacing: 0.04em;
+}
+
+.footer-contact .footer-line:last-of-type {
+  margin-top: 6px;
+}
+
+.footer-contact .footer-bottom {
+  margin-top: 54px;
+}
