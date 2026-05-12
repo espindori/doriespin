@@ -629,13 +629,13 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 18px;
+  padding-top: 26px;
 }
 
 .footer-copy,
 .footer-signature {
   margin: 0;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1;
   font-weight: 400;
   color: #8f8f8f;
