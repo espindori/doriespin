@@ -535,7 +535,7 @@ img {
 
 .footer-contact {
   padding: 0 8px 16px;
-  margin-top: 120px;
+  margin-top: 24px;
 }
 
 .footer-top-line,
@@ -593,8 +593,8 @@ img {
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: end;
-  margin-top: 120px;
-  margin-bottom: 24px;
+  margin-top: 18px;
+  margin-bottom: 18px;
 }
 
 /* izquierda */
@@ -629,13 +629,13 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 26px;
+  padding-top: 18px;
 }
 
 .footer-copy,
 .footer-signature {
   margin: 0;
-  font-size: 14px;
+  font-size: 11px;
   line-height: 1;
   font-weight: 400;
   color: #8f8f8f;
