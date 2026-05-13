@@ -555,13 +555,13 @@ img {
 .footer-left {
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 8px;
 }
 
 /* frase pequeña */
 
 .footer-kicker {
-  margin: 0 0 14px; 
+  margin: 0; 
   font-size: 14px;
   line-height: 1;
   font-weight: 400;
