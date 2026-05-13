@@ -549,6 +549,7 @@ img {
   justify-content: space-between;
   align-items: flex-start;
   padding-top: 18px;
+  padding-bottom: 48px;
 }
 
 .footer-left {
@@ -580,7 +581,7 @@ img {
 /* logo más pequeño */
 
 .footer-logo {
-  width: 150px;
+  width: 110px;
   height: auto;
   display: block;
 }
@@ -591,7 +592,7 @@ img {
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: end;
-  margin-top: 80px;
+  margin-top: 48px;
   margin-bottom: 18px;
 }
 
