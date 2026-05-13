@@ -593,7 +593,7 @@ img {
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: end;
-  margin-top: 18px;
+  margin-top: 200px;
   margin-bottom: 18px;
 }
 
