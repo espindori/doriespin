@@ -629,7 +629,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 18px;
+  margin-top: 18px;
+  margin-bottom: 9px;
 }
 
 .footer-copy,
