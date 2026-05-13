@@ -361,10 +361,16 @@ img {
 
 .about-layout {
   display: grid;
-  grid-template-columns: 600px minmax(0, 1fr);
-  column-gap: 24px;
-  padding: 12px 8px 0;
+  grid-template-columns: 520px minmax(0, 1fr);
+  column-gap: 0;
   align-items: start;
+}
+
+.about-text {
+  border-left: 1px solid var(--line);
+  padding-left: 8px;
+  margin-left: 8px;
+  max-width: 1000px;
 }
 
 .about-photo img {
