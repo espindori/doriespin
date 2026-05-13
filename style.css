@@ -646,18 +646,16 @@ img {
 }
 
 .journal-page {
-  padding: 24px 8px 80px;
+  padding: 8px 8px 80px;
 }
 
 .journal-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
 }
 
 .journal-card {
-  padding: 24px 28px 36px;
+  padding: 8px;
   min-height: 760px;
 }
 
@@ -667,10 +665,10 @@ img {
 
 .journal-card-image {
   width: 100%;
-  height: 140px;
+  aspect-ratio: 5 / 4;
   object-fit: cover;
   display: block;
-  margin-bottom: 26px;
+  margin-bottom: 8px;
 }
 
 .journal-card-meta,
@@ -679,8 +677,8 @@ img {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--line);
-  padding-bottom: 18px;
-  margin-bottom: 24px;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
   font-size: 13px;
   line-height: 1;
   font-weight: 400;
@@ -689,7 +687,7 @@ img {
 }
 
 .journal-card h2 {
-  margin: 0 0 64px;
+  margin: 0 0 8px;
   font-size: 54px;
   line-height: 0.95;
   font-weight: 400;
@@ -697,7 +695,7 @@ img {
 }
 
 .journal-card-subtitle {
-  margin: -10px 0 260px;
+  margin: 0 0 120px;
   font-size: 13px;
   line-height: 1;
   font-weight: 600;
@@ -707,11 +705,11 @@ img {
 
 .journal-prompts {
   border-top: 1px solid var(--line);
-  padding-top: 28px;
+  padding-top: 8px;
 }
 
 .journal-prompts p {
-  margin: 0 0 28px;
+  margin: 0 0 24px;
   font-size: 28px;
   line-height: 1.15;
   font-weight: 400;
