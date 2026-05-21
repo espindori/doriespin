@@ -650,88 +650,64 @@ img {
   padding: 8px 8px 80px;
 }
 
-.journal-grid {
+.journal-columns {
+  position: relative;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr 1fr;
+  column-gap: 8px;
 }
 
-.journal-card {
-  padding: 8px;
-  min-height: 760px;
+/* línea vertical que crece con toda la página */
+.journal-columns::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background: var(--line);
+  transform: translateX(-0.5px);
 }
 
-.journal-card:first-child {
-  border-right: 1px solid var(--line);
+.journal-column {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.journal-card-image {
+.journal-column:first-child {
+  padding-right: 8px;
+}
+
+.journal-column:last-child {
+  padding-left: 8px;
+}
+
+.journal-post img {
   width: 100%;
-  aspect-ratio: 7 / 5;
+  aspect-ratio: 5 / 4;
   object-fit: cover;
   display: block;
-  margin-bottom: 8px;
 }
 
-.journal-card-meta,
-.journal-card-label {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.journal-post-meta {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+  padding: 6px 0;
   border-bottom: 1px solid var(--line);
+  font-size: 11px;
+  line-height: 1.1;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.journal-post p {
+  margin: 8px 0 0;
   padding-bottom: 8px;
-  margin-bottom: 8px;
+  border-bottom: 1px solid var(--line);
   font-size: 13px;
-  line-height: 1;
+  line-height: 1.05;
   font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-.journal-card h2 {
-  margin: 0 0 8px;
-  font-size: 54px;
-  line-height: 0.95;
-  font-weight: 400;
-  letter-spacing: -0.04em;
-}
-
-.journal-card-subtitle {
-  margin: 0 0 120px;
-  font-size: 13px;
-  line-height: 1;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-.journal-prompts {
-  border-top: 1px solid var(--line);
-  padding-top: 8px;
-}
-
-.journal-prompts p {
-  margin: 0 0 24px;
-  font-size: 28px;
-  line-height: 1.15;
-  font-weight: 400;
-  letter-spacing: -0.03em;
-}
-
-@media (max-width: 900px) {
-  .journal-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .journal-card:first-child {
-    border-right: 0;
-    border-bottom: 1px solid var(--line);
-  }
-
-  .journal-card {
-    min-height: auto;
-  }
-
-  .journal-card-subtitle {
-    margin-bottom: 120px;
-  }
 }
