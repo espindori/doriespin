@@ -711,3 +711,64 @@ img {
   font-weight: 400;
   text-transform: uppercase;
 }
+
+@media (max-width: 640px) {
+  .project-layout {
+    display: block;
+    padding: 16px 8px 32px;
+  }
+
+  .project-sidebar {
+    position: static;
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .project-content {
+    width: 100%;
+    max-width: none;
+  }
+
+  .project-content h1 {
+    font-size: 34px;
+    line-height: 1;
+    max-width: 100%;
+    margin-bottom: 18px;
+  }
+
+  .project-intro {
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 1.35;
+    margin-bottom: 24px;
+  }
+
+  .project-video,
+  .project-single-image,
+  .project-gifs,
+  .image-mosaic,
+  .project-video-grid {
+    width: 100%;
+  }
+
+  .project-gifs,
+  .project-gifs-4 {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .project-video-grid-5 {
+    grid-template-columns: 1fr;
+  }
+
+  .mosaic-row,
+  .mosaic-row-3,
+  .mosaic-row-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .mosaic-row img {
+    height: auto;
+    aspect-ratio: auto;
+  }
+}
