@@ -772,3 +772,41 @@ img {
     aspect-ratio: auto;
   }
 }
+
+@media (max-width: 640px) {
+  .about-layout {
+    display: block;
+    padding: 16px 8px 0;
+  }
+
+  .about-photo {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .about-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .about-text {
+    max-width: none;
+    padding-left: 0;
+  }
+
+  .about-text::before {
+    display: none;
+  }
+
+  .about-text p {
+    margin: 0 0 18px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .about-caption {
+    margin-top: 4px;
+    font-size: 10px;
+  }
+}
