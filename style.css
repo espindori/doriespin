@@ -830,4 +830,29 @@ img {
     height: auto;
     justify-self: end;
   }
-}
+  
+  .header-main {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .brand-logo {
+    height: 18px;
+  }
+
+  .brand-name {
+    font-size: 14px;
+  }
+
+  .main-nav {
+    gap: 14px;
+    font-size: 14px;
+  }
+    .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--bg);
+  }
+  }
