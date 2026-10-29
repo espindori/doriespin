@@ -901,3 +901,25 @@ img {
   object-fit: contain;
   margin: 16px auto 0;
 }
+
+.image-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.image-row > .image-item {
+  flex: var(--ratio, 1) 1 0%;
+  min-width: 0;
+  margin: 0;
+}
+
+.image-row > .image-item > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: auto;
+}
