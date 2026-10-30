@@ -12,50 +12,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 </head>
-
-  <script>
-  document.querySelectorAll(".journal-gallery").forEach(gallery => {
-    const images = Array.from(gallery.querySelectorAll(":scope > img"));
-    const prev = gallery.querySelector(".journal-gallery-prev");
-    const next = gallery.querySelector(".journal-gallery-next");
-    const status = gallery.querySelector(".journal-gallery-status");
-
-    if (!images.length || !prev || !next) return;
-
-    let current = 0;
-
-    function showImage(index) {
-      current = (index + images.length) % images.length;
-
-      images.forEach((image, i) => {
-        image.hidden = i !== current;
-        image.classList.toggle("is-active", i === current);
-      });
-
-      if (status) {
-        status.textContent = `Imagen ${current + 1} de ${images.length}`;
-      }
-    }
-
-    prev.hidden = images.length < 2;
-    next.hidden = images.length < 2;
-
-    prev.addEventListener("click", () => showImage(current - 1));
-    next.addEventListener("click", () => showImage(current + 1));
-
-    gallery.addEventListener("keydown", event => {
-      if (event.key === "ArrowLeft") {
-        event.preventDefault();
-        showImage(current - 1);
-      } else if (event.key === "ArrowRight") {
-        event.preventDefault();
-        showImage(current + 1);
-      }
-    });
-
-    showImage(0);
-  });
-</script>
   
 <body>
 
@@ -352,6 +308,48 @@
   </div>
 
 </footer>
+  <script>
+  document.querySelectorAll(".journal-gallery").forEach(gallery => {
+    const images = Array.from(gallery.querySelectorAll(":scope > img"));
+    const prev = gallery.querySelector(".journal-gallery-prev");
+    const next = gallery.querySelector(".journal-gallery-next");
+    const status = gallery.querySelector(".journal-gallery-status");
 
+    if (!images.length || !prev || !next) return;
+
+    let current = 0;
+
+    function showImage(index) {
+      current = (index + images.length) % images.length;
+
+      images.forEach((image, i) => {
+        image.hidden = i !== current;
+        image.classList.toggle("is-active", i === current);
+      });
+
+      if (status) {
+        status.textContent = `Imagen ${current + 1} de ${images.length}`;
+      }
+    }
+
+    prev.hidden = images.length < 2;
+    next.hidden = images.length < 2;
+
+    prev.addEventListener("click", () => showImage(current - 1));
+    next.addEventListener("click", () => showImage(current + 1));
+
+    gallery.addEventListener("keydown", event => {
+      if (event.key === "ArrowLeft") {
+        event.preventDefault();
+        showImage(current - 1);
+      } else if (event.key === "ArrowRight") {
+        event.preventDefault();
+        showImage(current + 1);
+      }
+    });
+
+    showImage(0);
+  });
+</script>
 </body>
 </html>
