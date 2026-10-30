@@ -926,3 +926,74 @@ img {
   max-height: none;
   aspect-ratio: auto;
 }
+
+/* GALERÍAS DENTRO DE LOS POSTS */
+
+.journal-gallery {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 5 / 4;
+  overflow: hidden;
+}
+
+.journal-gallery > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.journal-gallery > img[hidden],
+.journal-gallery-arrow[hidden] {
+  display: none;
+}
+
+.journal-gallery-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+
+  background: rgba(255, 255, 255, 0.85);
+  color: #000;
+  font-family: inherit;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.journal-gallery-prev {
+  left: 8px;
+}
+
+.journal-gallery-next {
+  right: 8px;
+}
+
+.journal-gallery-arrow:hover {
+  background: #fff;
+}
+
+.journal-gallery-arrow:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
+
+/* Estado accesible, oculto visualmente */
+.journal-gallery-status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
