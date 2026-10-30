@@ -13,6 +13,50 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 </head>
 
+  <script>
+  document.querySelectorAll(".journal-gallery").forEach(gallery => {
+    const images = Array.from(gallery.querySelectorAll(":scope > img"));
+    const prev = gallery.querySelector(".journal-gallery-prev");
+    const next = gallery.querySelector(".journal-gallery-next");
+    const status = gallery.querySelector(".journal-gallery-status");
+
+    if (!images.length || !prev || !next) return;
+
+    let current = 0;
+
+    function showImage(index) {
+      current = (index + images.length) % images.length;
+
+      images.forEach((image, i) => {
+        image.hidden = i !== current;
+        image.classList.toggle("is-active", i === current);
+      });
+
+      if (status) {
+        status.textContent = `Imagen ${current + 1} de ${images.length}`;
+      }
+    }
+
+    prev.hidden = images.length < 2;
+    next.hidden = images.length < 2;
+
+    prev.addEventListener("click", () => showImage(current - 1));
+    next.addEventListener("click", () => showImage(current + 1));
+
+    gallery.addEventListener("keydown", event => {
+      if (event.key === "ArrowLeft") {
+        event.preventDefault();
+        showImage(current - 1);
+      } else if (event.key === "ArrowRight") {
+        event.preventDefault();
+        showImage(current + 1);
+      }
+    });
+
+    showImage(0);
+  });
+</script>
+  
 <body>
 
 <header class="site-header">
@@ -41,19 +85,43 @@
 <main class="journal-page">
   <section class="journal-columns">
 
+        COLUMNA 01
     <div class="journal-column">
 
       <article class="journal-post">
-        <img src="assets/journal/journal_stereomadness.jpg" alt="journal_stereomadness">
+        <img src="assets/journal/about-winnie.JPG" alt="XIONGZAI">
         <div class="journal-post-meta">
-          <span>MÚSICA EN DIRECTO</span>
-          <span>MAYO 2026</span>
+          <span>COMIDA</span>
+          <span>OCTUBRE 2026</span>
         </div>
         <p>
-          EL OTRO DÍA ESTUVE EN UNO DE MIS CONCIERTOS FAVORITOS DE LO QUE LLEVAMOS DE 2025. STEREO MADNESS ES UN GRUPO DE DISCO COSMIC-FUNK
-          QUE MOLA MUUUUUUUUUCHO. EL CONTRASTE DE LA MÚSICA Y LAS LETRAS HACE QUE EL RANGO DE EDAD Y ESTILO DE PÚBLICO SEA MUY AMPLIO PERO A
-          LA VEZ ESTÉ MUY COMPROMETIDO SON LA MOVIDA, COSA QUE TE LO DA TODO EN UN CONCIERTO. EN RESUMEN: MÚSICA BIEN HECHA Y CON GANAS.
-          MIS FAVORITAS FUERON BOTINES BLANCO Y ÉCHALE MÁS. RECOMMENDED.
+          QUEDA OFICIALMENTE INAUGURADA LA SOUP SEASON, Y QUÉ MEJOR FORMA DE EMPEZARLA QUE CON EL RAMEN DE TERNERA COCIDA CON FIDEOS DE BATATA 
+          DE MI SITIO DE CONFIANZA XIONGZAI <3
+        </p>
+      </article>
+      
+      <article class="journal-post">
+        <img src="assets/journal/about-kitchen.JPG" alt="KITCHEN 154">
+        <div class="journal-post-meta">
+          <span>COMIDA</span>
+          <span>SEPTIEMBRE 2026</span>
+        </div>
+        <p>
+          POCAS COSAS ME HACEN MÁS FELIZ QUE LOS YUM KAI DAO DE KITCHEN 154. ES QUE NO HAY PALABRAS.
+        </p>
+      </article>
+      
+      <article class="journal-post">
+        <img src="assets/journal/journal_badbunny.JPG" alt="journal_badbunny">
+        <div class="journal-post-meta">
+          <span>MÚSICA EN DIRECTO</span>
+          <span>JUNIO 2026</span>
+        </div>
+        <p>
+          QUE OS VOY A DECIR YO DE ESTE CONCIERTO QUE NO SEPÁIS YA... BASTANTE CHARCA POR MI PARTE PERO PF QUE COSA MÁS EMOCIONANTE, TE HACE
+          SENTIR CONSTANTEMENTE QUE FORMAS PARTE DE ALGO INMENSO. UN REGGAETÓN DE LUJO Y UN TRACKLIST NO SKIPS QUE TE HACE PENSAR A MITAD DE
+          CONCIERTO QUE NO PUEDE IR A MEJOR Y AÚN ASÍ MEJORA. Y SOBRE LA FRASECITA DE LA FOTO, NO PUEDO ESTAR MÁS DE ACUERDO:) EL AMOR NOS
+          HUMANIZA Y NOS DEVUELVE LO QUE LA RUTINA CAPITALISTA NOS QUITA CADA DÍA, ASI QUE MIENTRAS UNO ESTÉ VIVO UNO DEBE AMAR LO MÁS QUE PUEDA &lt;3
         </p>
       </article>
 
@@ -73,19 +141,61 @@
 
     </div>
 
+        COLUMNA 02
     <div class="journal-column">
 
       <article class="journal-post">
-        <img src="assets/journal/journal_badbunny.JPG" alt="journal_badbunny">
+        <img src="assets/journal/about-dia-santos.JPG" alt="DÍA DE TODOS LOS SANTOS">
         <div class="journal-post-meta">
-          <span>MÚSICA EN DIRECTO</span>
-          <span>JUNIO 2026</span>
+          <span>PENSAMIENTOS</span>
+          <span>OCTUBRE 2026</span>
         </div>
         <p>
-          QUE OS VOY A DECIR YO DE ESTE CONCIERTO QUE NO SEPÁIS YA... BASTANTE CHARCA POR MI PARTE PERO PF QUE COSA MÁS EMOCIONANTE, TE HACE
-          SENTIR CONSTANTEMENTE QUE FORMAS PARTE DE ALGO INMENSO. UN REGGAETÓN DE LUJO Y UN TRACKLIST NO SKIPS QUE TE HACE PENSAR A MITAD DE
-          CONCIERTO QUE NO PUEDE IR A MEJOR Y AÚN ASÍ MEJORA. Y SOBRE LA FRASECITA DE LA FOTO, NO PUEDO ESTAR MÁS DE ACUERDO:) EL AMOR NOS
-          HUMANIZA Y NOS DEVUELVE LO QUE LA RUTINA CAPITALISTA NOS QUITA CADA DÍA, ASI QUE MIENTRAS UNO ESTÉ VIVO UNO DEBE AMAR LO MÁS QUE PUEDA &lt;3
+          SE ACERCA EL DÍA DE TODOS LOS SANTOS Y LA GENTE COMPRA FLORES EN CANTIDADES INDUSTRIALES, YO ESTOY HABLANDO MUCHO DE LA MUERTE CON 
+          MI PADRE. DESDE QUE FALLECIÓ MI PRIMO NOSOTROS CONVIVIMOS CON LA IDEA DE LA MUERTE DE UNA FORMA MUY CERCANA Y RELAJADA. EL DESALIENTO 
+          QUE GENERA LA MUERTE DE UNA PERSONA JÓVEN NO TIENE CONSUELO, ASI QUE SIMPLEMENTE APRENDES A VIVIR CON ELLOY LLEGA UN MOMENTO EN QUE 
+          SE TRANSFORMA EN UNA ACTITUD VALIENTE Y CASI KAMIKAZE. NOSOTROS VIVIMOS CON LA IDEA DE QUE MAÑANA MISMO TODO SE PUEDE IR A LA MIERDA 
+          MUY PRESENTE, Y CREO QUE NO HAY FORMA MÁS NATURAL Y SINCERA DE AFRONTAR LA VIDA QUE ESA. CUALQUIER MIEDO CON EL QUE VIVAS SOLO TE VA A 
+          PARALIZAR, Y CON EL TIEMPO TE DARÁS CUENTA DE QUE EL TIEMPO HA PASADO IGUALMENTE Y POR CULPA DE ESE MIEDO NO HAS SIDO DUEÑO DE TU VIDA.
+        </p>
+      </article>
+      
+            <article class="journal-post">
+        <div class="journal-gallery" aria-label="Galería de imágenes">
+  <img src="assets/journal/about-acampada-1.JPG" alt="ANALÓGICAS DE ACAMPADA" class="is-active">
+  <img src="assets/journal/about-acampada-2.JPG" alt="ANALÓGICAS DE ACAMPADA" hidden>
+  <img src="assets/journal/about-acampada-3.JPG" alt="ANALÓGICAS DE ACAMPADA" hidden>
+  <img src="assets/journal/about-acampada-4.JPG" alt="ANALÓGICAS DE ACAMPADA" hidden>
+
+  <button class="journal-gallery-arrow journal-gallery-prev" type="button" aria-label="Ver imagen anterior" hidden>&#8592;</button>
+  <button class="journal-gallery-arrow journal-gallery-next" type="button" aria-label="Ver imagen siguiente" hidden>&#8594;</button>
+
+  <span class="journal-gallery-status" aria-live="polite"></span>
+</div>
+        <div class="journal-post-meta">
+          <span>RANDOM</span>
+          <span>SEPTIEMBRE 2026</span>
+        </div>
+        <p>
+          LA ACAMPADA POR EL DERECHO A LA VIVIENDA ES UN MOVIMIENTO SOCIAL QUE ME HA REMOVIDO MUCHO PORQUE ESTABA EMPEZANDO A PERDER LA
+          ESPERANZA DE QUE EN ESTE PAÍS QUEDASE ESPÍRITU REIVINDICATIVO. DIRÍA QUE MADRID DA MIEDO, PERO ES QUE ESTO NO ESTÁ SUCEDIENDO 
+          SOLO EN MADRID, TODA ESPAÑA ESTÁ COLAPSADA PORQUE NO HAY CAPACIDAD DE PENSAMIENTO A FUTURO. ESTAS SON LAS FOTOS QUE HICE A DÍA 28 
+          DE SEPTIEMBRE DE LA ACAMPADA. [UPDATE: A DÍA 30 DE OCTUBRE LA ACAMPADA SIGUE EN PIE A ESPERA DE LA HUELGA GEENRAL CONVOCADA PARA EL 
+          11 DE NOVIEMBRE]
+        </p>
+      </article>
+      
+      <article class="journal-post">
+        <img src="assets/journal/journal_stereomadness.jpg" alt="journal_stereomadness">
+        <div class="journal-post-meta">
+          <span>MÚSICA EN DIRECTO</span>
+          <span>MAYO 2026</span>
+        </div>
+        <p>
+          EL OTRO DÍA ESTUVE EN UNO DE MIS CONCIERTOS FAVORITOS DE LO QUE LLEVAMOS DE 2025. STEREO MADNESS ES UN GRUPO DE DISCO COSMIC-FUNK
+          QUE MOLA MUUUUUUUUUCHO. EL CONTRASTE DE LA MÚSICA Y LAS LETRAS HACE QUE EL RANGO DE EDAD Y ESTILO DE PÚBLICO SEA MUY AMPLIO PERO A
+          LA VEZ ESTÉ MUY COMPROMETIDO SON LA MOVIDA, COSA QUE TE LO DA TODO EN UN CONCIERTO. EN RESUMEN: MÚSICA BIEN HECHA Y CON GANAS.
+          MIS FAVORITAS FUERON BOTINES BLANCO Y ÉCHALE MÁS. RECOMMENDED.
         </p>
       </article>
 
@@ -103,8 +213,44 @@
 
     </div>
 
+    COLUMNA 03
     <div class="journal-column">
 
+      <article class="journal-post">
+        <img src="assets/journal/about-personas.JPG" alt="PERSONAS, LUGARES Y COSAS">
+        <div class="journal-post-meta">
+          <span>TEATRO</span>
+          <span>SEPTIEMBRE 2026</span>
+        </div>
+        <p>
+          HACÍA MUCHO QUE NO IBA AL TEATRO Y QUÉ PENA HABER TARDADO TANTO. LUGARES, PERSONAS Y COSAS ME HA ENCANTADO PORQUE NO ES NADA 
+          DRAMÁTICA NI MORALISTA, SIMPLEMENTE TE CUENTA LA VIDA TAL Y COMO ES, TAL Y COMO HAY QUE ENFRENTARLA. NO PRETENDE MOSTRARTE UNA
+          IDEA CERRADA SOBRE EL CONSUMO NI SOBRE COMO LIDIAR CON ÉL.
+        </p>
+      </article>
+      
+            <article class="journal-post">
+        <div class="journal-gallery" aria-label="Galería de imágenes">
+  <img src="assets/journal/about-verano-1.JPG" alt="ANALÓGICAS DE VERANO" class="is-active">
+  <img src="assets/journal/about-verano-2.JPG" alt="ANALÓGICAS DE VERANO" hidden>
+  <img src="assets/journal/about-verano-3.JPG" alt="ANALÓGICAS DE VERANO" hidden>
+  <img src="assets/journal/about-verano-4.JPG" alt="ANALÓGICAS DE VERANO" hidden>
+
+  <button class="journal-gallery-arrow journal-gallery-prev" type="button" aria-label="Ver imagen anterior" hidden>&#8592;</button>
+  <button class="journal-gallery-arrow journal-gallery-next" type="button" aria-label="Ver imagen siguiente" hidden>&#8594;</button>
+
+  <span class="journal-gallery-status" aria-live="polite"></span>
+</div>
+        <div class="journal-post-meta">
+          <span>RANDOM</span>
+          <span>VERANO 2026</span>
+        </div>
+        <p>
+          HE ESTADO HACIENDO FOTOS ESTE VERANO, SOBRETODO A MIS AMIGAS Y ESTOY MUY CONTENTA CON ALGUNAS. ME ESTÁ HACIENDO MUCHA ILUSIÓN SER
+          LA QUE DISPARA PORQUE HABÍA PERDIDO EL HÁBITO. 
+        </p>
+      </article>
+      
       <article class="journal-post">
         <img src="assets/journal/journal_PLAYLISTPRIMAVERA.jpg" alt="journal_PLAYLISTPRIMAVERA">
         <div class="journal-post-meta">
