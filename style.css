@@ -653,34 +653,37 @@ img {
 .journal-columns {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 8px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
 }
 
-/* línea vertical que crece con toda la página */
-.journal-columns::before {
+.journal-column {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+  padding: 0;
+}
+
+.journal-column + .journal-column::before {
   content: "";
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 50%;
+  left: -12px;
   width: 1px;
   background: var(--line);
-  transform: translateX(-0.5px);
 }
 
-.journal-column {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
+@media (max-width: 700px) {
+  .journal-columns {
+    grid-template-columns: minmax(0, 1fr);
+  }
 
-.journal-column:first-child {
-  padding-right: 8px;
-}
-
-.journal-column:last-child {
-  padding-left: 8px;
+  .journal-column + .journal-column::before {
+    content: none;
+  }
 }
 
 .journal-post img {
